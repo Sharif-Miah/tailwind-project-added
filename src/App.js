@@ -1,6 +1,7 @@
 
 import './App.css';
 import Navbar from './component/Navbar/Navbar';
+import PhoneBar from './component/PhoneBar/PhoneBar';
 import Pricing from './component/Pricing/Pricing';
 import Reachart from './component/Reachart/Reachart';
 
@@ -12,6 +13,7 @@ function App() {
       <h1 className='text-3xl '>This is another tag</h1>
       <Pricing />
       <Reachart />
+      <PhoneBar />
     </div>
   );
 }

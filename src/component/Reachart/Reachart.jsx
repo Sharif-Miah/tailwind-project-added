@@ -49,7 +49,7 @@ const Reachart = () => {
     ];
 
     return (
-        <div className='mt-20'>
+        <div className='mt-20 m-auto'>
             <h1 className='text-5xl'>Reachart</h1>
 
             <LineChart
@@ -59,6 +59,7 @@ const Reachart = () => {
             >
 
                 <Line type="monotone" dataKey="marks" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="quiz" stroke="#82ca9d" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />

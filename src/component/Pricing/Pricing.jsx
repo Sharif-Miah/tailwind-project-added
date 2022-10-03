@@ -35,7 +35,7 @@ const Pricing = () => {
             ]
         },
         {
-            id: 3, name: 'Platinam', price: 29.99, serviceList: [
+            id: 4, name: 'Platinam', price: 29.99, serviceList: [
                 'Platinam',
                 'Life Time Acess',
                 'All video free',
