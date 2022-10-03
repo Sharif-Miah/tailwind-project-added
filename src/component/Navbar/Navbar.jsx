@@ -12,22 +12,22 @@ const Navbar = () => {
         { id: 5, name: 'Contact', path: '/contact' },
     ]
     return (
-        <div>
-
-            {
-                open ? <Bars3Icon className='w-6 h-6' onClick={() => setOpen(!open)} /> : <XMarkIcon className='w-6 h-6' onClick={() => setOpen(!open)} />
-            }
-
-
-
-            <div className='md:flex justify-center'>
+        <nav className='bg-purple-200 w-full'>
+            <div onClick={() => setOpen(!open)} className='w-6 h-6 md:hidden cursor-pointer '>
                 {
-                    routes.map(route => <Links key={route.id} route={route} />)
+                    open ? <XMarkIcon /> : <Bars3Icon />
                 }
             </div>
-            <h1 className='text-4xl font-bold underline '>Navbar in Tailwind Css</h1>
-            <h1 className='text-3xl underline'>This is another tag</h1>
-        </div>
+
+            <div>
+                <ul className={` md:flex justify-center  absolute md:static  duration-500 ease-in w-full bg-purple-200 ${open ? 'top-6px' : 'top-[-180px]'}`}>
+                    {
+                        routes.map(route => <Links key={route.id} route={route} />)
+                    }
+                </ul>
+            </div>
+
+        </nav>
     );
 };
 
